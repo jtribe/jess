@@ -9,9 +9,7 @@
 import Foundation
 import UIKit
 
-protocol Konami {
-	func allowKonamiMode() -> Bool
-	
+protocol Konami {	
 	func correct()
 	func incorrect()
 }
@@ -102,12 +100,12 @@ class KonamiEngine {
 
 extension Konami where Self: UIViewController {
 	
-	func enableKonamiMode() {
-		KonamiEngine.sharedInstance.swipeGestures.forEach({ view.addGestureRecognizer($0) })
-		KonamiEngine.sharedInstance.delegate = self
+	func addKonamiGestures() {
+		AppDelegate.konamiEngine.swipeGestures.forEach({ view.addGestureRecognizer($0) })
+		AppDelegate.konamiEngine.delegate = self
 	}
 	
-	func disableKonamiMode() {
+	func removeKonamiGestures() {
 		view.gestureRecognizers?.forEach({
 			if let swipe = $0 as? UISwipeGestureRecognizer {
 				view.removeGestureRecognizer(swipe)
@@ -116,16 +114,16 @@ extension Konami where Self: UIViewController {
 	}
 	
 	func correct() {
-		if allowKonamiMode() {
+		if Bundle.isKonamiMode {
 			performSegue(withIdentifier: "DebugViewControllerSegue", sender: nil)
 		} else {
-			KonamiEngine.sharedInstance.showBuildPopup()
-			KonamiEngine.sharedInstance.hidePopup()
+			AppDelegate.konamiEngine.showBuildPopup()
+			AppDelegate.konamiEngine.hidePopup()
 		}
 	}
 	
 	func incorrect() {
-		if allowKonamiMode() {
+		if Bundle.isKonamiMode {
 			view.layer.shake()
 		}
 	}

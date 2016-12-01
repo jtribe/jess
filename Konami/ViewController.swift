@@ -12,16 +12,10 @@ class ViewController: UIViewController, Konami {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		enableKonamiMode()
+		addKonamiGestures()
 	}
 	
-	@IBAction func unwindFromDebug(segue: UIStoryboardSegue) {
-		print("returned!")
-	}
-	
-	func allowKonamiMode() -> Bool {
-		return true
-	}
+	@IBAction func unwindFromDebug(segue: UIStoryboardSegue) {}
 	
 }
 
