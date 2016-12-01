@@ -32,6 +32,8 @@ echo "コナミを設定中"
 /usr/libexec/PlistBuddy -c "Add :KonamiModeActive bool true" "$INFOPLISTPATH"
 ```
 
+However if you're uncomfortable with using `PlistBuddy` then using the Info.plist key on its own is just fine and dandy.
+
 ## Use
 Add a view controller to a Storyboard file in your project that you will use for your Debug Drawer. Wire up a Segue to it, and **make sure** the segue identifier is equal to `DebugViewControllerSegue`.
 
