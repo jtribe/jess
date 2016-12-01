@@ -8,18 +8,20 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, Konami {
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		// Do any additional setup after loading the view, typically from a nib.
+		enableKonamiMode()
 	}
-
-	override func didReceiveMemoryWarning() {
-		super.didReceiveMemoryWarning()
-		// Dispose of any resources that can be recreated.
+	
+	@IBAction func unwindFromDebug(segue: UIStoryboardSegue) {
+		print("returned!")
 	}
-
-
+	
+	func allowKonamiMode() -> Bool {
+		return true
+	}
+	
 }
 
