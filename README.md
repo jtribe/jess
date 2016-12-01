@@ -21,6 +21,17 @@ Also add the following Key and Value pair to your Info.plist:
 ```
 Setting this key to `true` (YES, in Info.plist GUI) will unlock full Debug Drawer functionality. Setting it to false means that when you perform the gesture, a small popup containing the version and build of the app will be invoked.
 
+### Build Phase
+I recommend the use of an Xcode Build Phase to set the appropriate value in the Info.plist for the configuration. Ideally, the Debug drawer should not be accessible in a release build.
+
+```bash
+INFOPLISTPATH="$PROJECT_DIR/Konami/Info.plist"
+
+echo "コナミを設定中"
+/usr/libexec/PlistBuddy -c "Delete :KonamiModeActive" "$INFOPLISTPATH"
+/usr/libexec/PlistBuddy -c "Add :KonamiModeActive bool true" "$INFOPLISTPATH"
+```
+
 ## Use
 Add a view controller to a Storyboard file in your project that you will use for your Debug Drawer. Wire up a Segue to it, and **make sure** the segue identifier is equal to `DebugViewControllerSegue`.
 
