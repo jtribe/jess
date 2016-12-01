@@ -12,6 +12,7 @@ func allowKonamiMode() -> Bool {
 	return true
 }
 ```
+If you `return true` in the above method, the segue will be triggered as mentioned below. If you `return false`, performing the gesture will invoke a small popup that shows the version and build number of the application. It is ideal to `return false` when you're shipping a Release build.
 
 Also make sure to call `addKonamiGestures()` in the `viewDidLoad()` method of your `UIViewController` instance.
 
