@@ -83,6 +83,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 065B99D01DEFC91A0065ABA4 /* Build configuration list for PBXNativeTarget "Konami" */;
 			buildPhases = (
+				06AF3D021DF0ED120055301A /* Konami Mode */,
 				065B99BA1DEFC91A0065ABA4 /* Sources */,
 				065B99BB1DEFC91A0065ABA4 /* Frameworks */,
 				065B99BC1DEFC91A0065ABA4 /* Resources */,
@@ -143,6 +144,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06AF3D021DF0ED120055301A /* Konami Mode */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Konami Mode";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "INFOPLISTPATH=\"$PROJECT_DIR/Konami/Info.plist\"\n\necho \"コナミを設定中\"\n/usr/libexec/PlistBuddy -c \"Delete :KonamiModeActive\" \"$INFOPLISTPATH\"\n/usr/libexec/PlistBuddy -c \"Add :KonamiModeActive bool false\" \"$INFOPLISTPATH\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		065B99BA1DEFC91A0065ABA4 /* Sources */ = {

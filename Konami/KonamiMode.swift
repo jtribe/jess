@@ -14,6 +14,11 @@ protocol Konami {
 	func incorrect()
 }
 
+// 2 - Left / 左
+// 1 - Right / 右
+// 8 - Down / 下
+// 4 - Up / 上
+
 class KonamiEngine {
 	
 	static var sharedInstance: KonamiEngine = KonamiEngine()
