@@ -43,3 +43,8 @@ Add a view controller to a Storyboard file in your project that you will use for
 
 
 YAAASSS... WERRRK!
+
+## Screenshots
+
+<img src="https://github.com/jtribe/konami/raw/master/Screenshots/Drawer.png" width="320"/>
+<img src="https://github.com/jtribe/konami/raw/master/Screenshots/Popup.png" width="320"/>
