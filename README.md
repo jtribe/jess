@@ -1,4 +1,6 @@
 # コナミ (Ko-na-mi)
+![日本語紹介](./読んでみて下さい.md)
+
 A gesture based debug drawer for iOS, written in Swift 3.
 
 ## How to use
