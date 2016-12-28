@@ -18,7 +18,12 @@ extension Bundle {
 	}
 	
 	static var isJessMode: Bool {
-		guard let jess: Bool = Bundle.main.object(forInfoDictionaryKey: "JessActive") as? Bool else { return false }
-		return jess
+        if Bundle.main.object(forInfoDictionaryKey: "ForceDebugDrawer") as! Bool == true { return true }
+        
+        #if DEBUG
+        return true
+        #else
+        return false
+        #endif
 	}
 }

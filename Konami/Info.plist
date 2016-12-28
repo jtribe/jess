@@ -18,7 +18,7 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
-	<key>JessActive</key>
+	<key>ForceDebugDrawer</key>
 	<false/>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
