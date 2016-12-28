@@ -12,7 +12,7 @@
 		065B99C71DEFC91A0065ABA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 065B99C51DEFC91A0065ABA4 /* Main.storyboard */; };
 		065B99C91DEFC91A0065ABA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 065B99C81DEFC91A0065ABA4 /* Assets.xcassets */; };
 		065B99CC1DEFC91A0065ABA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 065B99CA1DEFC91A0065ABA4 /* LaunchScreen.storyboard */; };
-		065B99D41DEFC9340065ABA4 /* KonamiMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065B99D31DEFC9340065ABA4 /* KonamiMode.swift */; };
+		065B99D41DEFC9340065ABA4 /* Jess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065B99D31DEFC9340065ABA4 /* Jess.swift */; };
 		06E44C601DEFD9C10006E8ED /* CALayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E44C5F1DEFD9C10006E8ED /* CALayerExtension.swift */; };
 		06E44C661DEFE6280006E8ED /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E44C651DEFE6280006E8ED /* UIViewExtension.swift */; };
 		06E44C681DEFEB2C0006E8ED /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E44C671DEFEB2C0006E8ED /* BundleExtension.swift */; };
@@ -26,7 +26,7 @@
 		065B99C81DEFC91A0065ABA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		065B99CB1DEFC91A0065ABA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		065B99CD1DEFC91A0065ABA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		065B99D31DEFC9340065ABA4 /* KonamiMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KonamiMode.swift; sourceTree = "<group>"; };
+		065B99D31DEFC9340065ABA4 /* Jess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Jess.swift; sourceTree = "<group>"; };
 		06E44C5F1DEFD9C10006E8ED /* CALayerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CALayerExtension.swift; sourceTree = "<group>"; };
 		06E44C651DEFE6280006E8ED /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		06E44C671DEFEB2C0006E8ED /* BundleExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
@@ -64,7 +64,7 @@
 			children = (
 				065B99C11DEFC91A0065ABA4 /* AppDelegate.swift */,
 				065B99C31DEFC91A0065ABA4 /* ViewController.swift */,
-				065B99D31DEFC9340065ABA4 /* KonamiMode.swift */,
+				065B99D31DEFC9340065ABA4 /* Jess.swift */,
 				06E44C651DEFE6280006E8ED /* UIViewExtension.swift */,
 				06E44C5F1DEFD9C10006E8ED /* CALayerExtension.swift */,
 				06E44C671DEFEB2C0006E8ED /* BundleExtension.swift */,
@@ -158,7 +158,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "INFOPLISTPATH=\"$PROJECT_DIR/Konami/Info.plist\"\n\necho \"コナミを設定中\"\n/usr/libexec/PlistBuddy -c \"Delete :KonamiModeActive\" \"$INFOPLISTPATH\"\n/usr/libexec/PlistBuddy -c \"Add :KonamiModeActive bool false\" \"$INFOPLISTPATH\"";
+			shellScript = "INFOPLISTPATH=\"$PROJECT_DIR/Konami/Info.plist\"\n\necho \"ジェスを設定中\"\n/usr/libexec/PlistBuddy -c \"Delete :JessActive\" \"$INFOPLISTPATH\"\n/usr/libexec/PlistBuddy -c \"Add :JessActive bool false\" \"$INFOPLISTPATH\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -167,7 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				065B99D41DEFC9340065ABA4 /* KonamiMode.swift in Sources */,
+				065B99D41DEFC9340065ABA4 /* Jess.swift in Sources */,
 				065B99C41DEFC91A0065ABA4 /* ViewController.swift in Sources */,
 				065B99C21DEFC91A0065ABA4 /* AppDelegate.swift in Sources */,
 				06E44C681DEFEB2C0006E8ED /* BundleExtension.swift in Sources */,

@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-protocol Konami {	
+protocol Jess {
 	func correct()
 	func incorrect()
 }
@@ -19,12 +19,12 @@ protocol Konami {
 // 8 - Down / 下
 // 4 - Up / 上
 
-class KonamiEngine {
+class JessEngine {
 	
-	static var sharedInstance: KonamiEngine = KonamiEngine()
+	static var sharedInstance: JessEngine = JessEngine()
 	var puzzle: [Int] = [2, 1, 8]
 	var answer: [Int] = []
-	var delegate: Konami?
+	var delegate: Jess?
 	
 	fileprivate var popup: UIView?
 	fileprivate var build: UILabel?
@@ -32,16 +32,16 @@ class KonamiEngine {
 	fileprivate init() {}
 	
 	var swipeGestures: [UISwipeGestureRecognizer] {
-		let up = UISwipeGestureRecognizer(target: self, action: #selector(KonamiEngine.checkDirection(recognizer:)))
+		let up = UISwipeGestureRecognizer(target: self, action: #selector(JessEngine.checkDirection(recognizer:)))
 		up.direction = .up
 		
-		let down = UISwipeGestureRecognizer(target: self, action: #selector(KonamiEngine.checkDirection(recognizer:)))
+		let down = UISwipeGestureRecognizer(target: self, action: #selector(JessEngine.checkDirection(recognizer:)))
 		down.direction = .down
 		
-		let left = UISwipeGestureRecognizer(target: self, action: #selector(KonamiEngine.checkDirection(recognizer:)))
+		let left = UISwipeGestureRecognizer(target: self, action: #selector(JessEngine.checkDirection(recognizer:)))
 		left.direction = .left
 		
-		let right = UISwipeGestureRecognizer(target: self, action: #selector(KonamiEngine.checkDirection(recognizer:)))
+		let right = UISwipeGestureRecognizer(target: self, action: #selector(JessEngine.checkDirection(recognizer:)))
 		right.direction = .right
 		
 		return [up, down, left, right]
@@ -103,14 +103,14 @@ class KonamiEngine {
 	}
 }
 
-extension Konami where Self: UIViewController {
+extension Jess where Self: UIViewController {
 	
-	func addKonamiGestures() {
-		AppDelegate.konamiEngine.swipeGestures.forEach({ view.addGestureRecognizer($0) })
-		AppDelegate.konamiEngine.delegate = self
+	func addJesstures() {
+		AppDelegate.jessEngine.swipeGestures.forEach({ view.addGestureRecognizer($0) })
+		AppDelegate.jessEngine.delegate = self
 	}
 	
-	func removeKonamiGestures() {
+	func removeJesstures() {
 		view.gestureRecognizers?.forEach({
 			if let swipe = $0 as? UISwipeGestureRecognizer {
 				view.removeGestureRecognizer(swipe)
@@ -119,16 +119,16 @@ extension Konami where Self: UIViewController {
 	}
 	
 	func correct() {
-		if Bundle.isKonamiMode {
+		if Bundle.isJessMode {
 			performSegue(withIdentifier: "DebugViewControllerSegue", sender: nil)
 		} else {
-			AppDelegate.konamiEngine.showBuildPopup()
-			AppDelegate.konamiEngine.hidePopup()
+			AppDelegate.jessEngine.showBuildPopup()
+			AppDelegate.jessEngine.hidePopup()
 		}
 	}
 	
 	func incorrect() {
-		if Bundle.isKonamiMode {
+		if Bundle.isJessMode {
 			view.layer.shake()
 		}
 	}

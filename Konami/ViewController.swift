@@ -8,11 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController, Konami {
+class ViewController: UIViewController, Jess {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		addKonamiGestures()
+		addJesstures()
 	}
 	
 	@IBAction func unwindFromDebug(segue: UIStoryboardSegue) {}
