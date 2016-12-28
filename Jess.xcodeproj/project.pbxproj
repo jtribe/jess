@@ -19,17 +19,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		065B99BE1DEFC91A0065ABA4 /* Konami.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Konami.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		065B99C11DEFC91A0065ABA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		065B99C31DEFC91A0065ABA4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		065B99BE1DEFC91A0065ABA4 /* Jess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jess.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		065B99C11DEFC91A0065ABA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../Jess/AppDelegate.swift; sourceTree = "<group>"; };
+		065B99C31DEFC91A0065ABA4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../Jess/ViewController.swift; sourceTree = "<group>"; };
 		065B99C61DEFC91A0065ABA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		065B99C81DEFC91A0065ABA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		065B99C81DEFC91A0065ABA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Jess/Assets.xcassets; sourceTree = "<group>"; };
 		065B99CB1DEFC91A0065ABA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		065B99CD1DEFC91A0065ABA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		065B99D31DEFC9340065ABA4 /* Jess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Jess.swift; sourceTree = "<group>"; };
-		06E44C5F1DEFD9C10006E8ED /* CALayerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CALayerExtension.swift; sourceTree = "<group>"; };
-		06E44C651DEFE6280006E8ED /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
-		06E44C671DEFEB2C0006E8ED /* BundleExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
+		065B99CD1DEFC91A0065ABA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Jess/Info.plist; sourceTree = "<group>"; };
+		065B99D31DEFC9340065ABA4 /* Jess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Jess.swift; path = ../Jess/Jess.swift; sourceTree = "<group>"; };
+		06E44C5F1DEFD9C10006E8ED /* CALayerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CALayerExtension.swift; path = ../Jess/CALayerExtension.swift; sourceTree = "<group>"; };
+		06E44C651DEFE6280006E8ED /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewExtension.swift; path = ../Jess/UIViewExtension.swift; sourceTree = "<group>"; };
+		06E44C671DEFEB2C0006E8ED /* BundleExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BundleExtension.swift; path = ../Jess/BundleExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +46,7 @@
 		065B99B51DEFC91A0065ABA4 = {
 			isa = PBXGroup;
 			children = (
-				065B99C01DEFC91A0065ABA4 /* Konami */,
+				065B99C01DEFC91A0065ABA4 /* Jess */,
 				065B99BF1DEFC91A0065ABA4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,12 +54,12 @@
 		065B99BF1DEFC91A0065ABA4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				065B99BE1DEFC91A0065ABA4 /* Konami.app */,
+				065B99BE1DEFC91A0065ABA4 /* Jess.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		065B99C01DEFC91A0065ABA4 /* Konami */ = {
+		065B99C01DEFC91A0065ABA4 /* Jess */ = {
 			isa = PBXGroup;
 			children = (
 				065B99C11DEFC91A0065ABA4 /* AppDelegate.swift */,
@@ -73,15 +73,15 @@
 				065B99CA1DEFC91A0065ABA4 /* LaunchScreen.storyboard */,
 				065B99CD1DEFC91A0065ABA4 /* Info.plist */,
 			);
-			path = Konami;
+			path = Jess;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		065B99BD1DEFC91A0065ABA4 /* Konami */ = {
+		065B99BD1DEFC91A0065ABA4 /* Jess */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 065B99D01DEFC91A0065ABA4 /* Build configuration list for PBXNativeTarget "Konami" */;
+			buildConfigurationList = 065B99D01DEFC91A0065ABA4 /* Build configuration list for PBXNativeTarget "Jess" */;
 			buildPhases = (
 				065B99BA1DEFC91A0065ABA4 /* Sources */,
 				065B99BB1DEFC91A0065ABA4 /* Frameworks */,
@@ -91,9 +91,9 @@
 			);
 			dependencies = (
 			);
-			name = Konami;
+			name = Jess;
 			productName = Konami;
-			productReference = 065B99BE1DEFC91A0065ABA4 /* Konami.app */;
+			productReference = 065B99BE1DEFC91A0065ABA4 /* Jess.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -113,7 +113,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 065B99B91DEFC91A0065ABA4 /* Build configuration list for PBXProject "Konami" */;
+			buildConfigurationList = 065B99B91DEFC91A0065ABA4 /* Build configuration list for PBXProject "Jess" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -126,7 +126,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				065B99BD1DEFC91A0065ABA4 /* Konami */,
+				065B99BD1DEFC91A0065ABA4 /* Jess */,
 			);
 		};
 /* End PBXProject section */
@@ -167,6 +167,7 @@
 				065B99C61DEFC91A0065ABA4 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ../Jess;
 			sourceTree = "<group>";
 		};
 		065B99CA1DEFC91A0065ABA4 /* LaunchScreen.storyboard */ = {
@@ -175,6 +176,7 @@
 				065B99CB1DEFC91A0065ABA4 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ../Jess;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -277,9 +279,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 44QVK8YH84;
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
-				INFOPLIST_FILE = Konami/Info.plist;
+				INFOPLIST_FILE = Jess/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jtribe.Konami;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jtribe.Jess;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -290,9 +292,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 44QVK8YH84;
-				INFOPLIST_FILE = Konami/Info.plist;
+				INFOPLIST_FILE = Jess/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jtribe.Konami;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jtribe.Jess;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -301,7 +303,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		065B99B91DEFC91A0065ABA4 /* Build configuration list for PBXProject "Konami" */ = {
+		065B99B91DEFC91A0065ABA4 /* Build configuration list for PBXProject "Jess" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				065B99CE1DEFC91A0065ABA4 /* Debug */,
@@ -310,7 +312,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		065B99D01DEFC91A0065ABA4 /* Build configuration list for PBXNativeTarget "Konami" */ = {
+		065B99D01DEFC91A0065ABA4 /* Build configuration list for PBXNativeTarget "Jess" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				065B99D11DEFC91A0065ABA4 /* Debug */,
