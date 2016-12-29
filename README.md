@@ -6,7 +6,7 @@ A gesture based debug drawer for iOS, written in Swift 3.
 ## How To Use
 Download the project and drop the files in. There's no Pod support yet. And I hate Git Submodules! (Sorry Simon!)
 
-Ensure that your `UIViewController` instance conforms to the `Jess` protocol, and call `addJesstures()` in the `viewDidLoad()` method.
+Call `addJesstures()` in the `viewDidLoad()` method of the `UIViewController` you want gestures enabled on.
 
 Add the following line to your AppDelegate:
 

@@ -134,3 +134,5 @@ extension Jess where Self: UIViewController {
 	}
 	
 }
+
+extension UIViewController: Jess {}
