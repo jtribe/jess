@@ -24,6 +24,8 @@ Setting this key to `true` (YES, in Info.plist GUI) will unlock full Debug Drawe
 
 Add a view controller to a Storyboard file in your project that you will use for your Debug Drawer. Wire up a Segue to it, and **make sure** the segue identifier is equal to `DebugViewControllerSegue`.
 
+Finally, edit the puzzle in `Jess.swift`.
+
 ## Screenshots
 
 <img src="https://github.com/jtribe/jess/raw/master/Screenshots/Drawer.png" width="320"/>
