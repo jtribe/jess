@@ -8,8 +8,7 @@ Download the project and drop the files in. There's no Pod support yet. And I ha
 
 Call `addJesstures()` in the `viewDidLoad()` method of the `UIViewController` you want gestures enabled on.
 
-Add the following line to your AppDelegate:
-
+Add the following line to your AppDelegate OR Constants file.
 ```swift
 static let jessEngine: JessEngine = JessEngine.sharedInstance
 ```
